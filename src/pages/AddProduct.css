@@ -1,0 +1,200 @@
+.add-product {
+  padding: 20px;
+}
+
+.add-product h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* 🔥 LAYOUT */
+.add-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* ================= FORM ================= */
+
+.form-card {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4f6df5;
+  box-shadow: 0 0 0 2px rgba(79,109,245,0.15);
+}
+
+.form-group small {
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
+}
+
+/* 🔍 SUGGEST BUTTON */
+.suggest-btn {
+  margin-top: 10px;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.suggest-btn:hover {
+  opacity: 0.9;
+}
+
+/* 🚀 SUBMIT BUTTON */
+.submit-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #4f6df5;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #3d5be0;
+}
+
+/* ================= PREVIEW ================= */
+
+.preview-card {
+  flex: 1;
+  background: #f7f8fc;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.preview-card h3 {
+  margin-bottom: 15px;
+}
+
+/* preview box */
+.preview-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.preview-box h4 {
+  margin-bottom: 6px;
+}
+
+.preview-box p {
+  margin: 3px 0;
+}
+
+.ean {
+  font-size: 13px;
+  color: gray;
+}
+
+/* ================= BADGES ================= */
+
+.market-status {
+  margin-bottom: 20px;
+}
+
+.badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.missing {
+  background: #ff4d4f;
+  color: white;
+}
+
+.hint {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* ================= SUGGESTIONS ================= */
+
+.suggestions-box {
+  margin-top: 20px;
+}
+
+.suggestions-box h4 {
+  margin-bottom: 10px;
+}
+
+.country-block {
+  margin-bottom: 15px;
+}
+
+.country-block b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* suggestion item */
+.suggest-item {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.suggest-item:hover {
+  transform: scale(1.02);
+}
+
+.suggest-item p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.suggest-item span {
+  display: block;
+  font-size: 12px;
+  color: gray;
+}
