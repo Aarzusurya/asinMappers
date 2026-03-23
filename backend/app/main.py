@@ -1,14 +1,19 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
 from app.routes import products, suggestions
 from app.routes.auth import router as auth_router
 
 app = FastAPI()
 
-# 🔥 CORS (IMPORTANT - BEFORE ROUTES)
+# ✅ CORS CONFIG (PRODUCTION READY)
+origins = [
+    "https://asin-mappers.vercel.app",  # your frontend
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # dev ke liye
+    allow_origins=origins,   # specific origin (safe)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
