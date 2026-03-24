@@ -6,14 +6,16 @@ from app.routes.auth import router as auth_router
 
 app = FastAPI()
 
-# ✅ CORS CONFIG (PRODUCTION READY)
+# ✅ CORS CONFIG (LOCAL + PRODUCTION)
 origins = [
-    "https://asin-mappers.vercel.app",  # your frontend
+    "https://asin-mappers.vercel.app",
+    "http://localhost:5173",
+    "http://localhost:5174"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,   # specific origin (safe)
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
