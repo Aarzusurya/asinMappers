@@ -1,0 +1,119 @@
+.details {
+  padding: 30px;
+}
+
+/* HEADER */
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.details-header h2 {
+  margin-bottom: 5px;
+}
+
+.ean {
+  color: gray;
+  font-size: 13px;
+}
+
+/* RIGHT */
+.header-right {
+  text-align: right;
+  width: 250px;
+}
+
+.summary {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* 🔥 PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: 0.3s;
+}
+
+/* BUTTON */
+.suggest-btn {
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #f97316, #fb923c);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.suggest-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* BADGES */
+.country-badges {
+  margin-bottom: 20px;
+}
+
+.badge {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.badge.ok {
+  background: #22c55e;
+  color: white;
+}
+
+.badge.missing {
+  background: #ef4444;
+  color: white;
+}
+
+/* CARD */
+.asin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.asin-card:hover {
+  transform: translateY(-3px);
+}
+
+/* LOADING */
+.loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.save-btn {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
